@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables and JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class = "center-info">
+        <h1>Update CSS Variables with JS</h1>
+        <div class = "controls">
+<!-- using dataset so we can make our own object to store whatever data we want. We have to store pixels or some sort of quantifier so the border and blur will display -->
+            <input type="range" name="spacing" value="10" min="10" max="200" data-sizing="px"><label for="spacing">Spacing</label>
+            <input type="range" name="blur" value="10" min="0" max="50" data-sizing="px"><label for="blur">Blur</label>
+            <input type="color" name="background" value="#bada55"><label for="background">Background</label>
+        </div>
+    </div>
+    <img src="https://www.dropbox.com/s/2ok4xou9ed8ctqd/BE883541-06B9-49D0-8950-988246DBA022_1_105_c.jpeg?raw=1"/>
+</body>
+</html>

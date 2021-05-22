@@ -1,0 +1,56 @@
+/* make a reuseable variable in css with --, in sass its a $ */
+:root {
+    --spacing: 10px;
+    --blur: 10px;
+    --background: #bada55;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    font-family:Tahoma, sans-serif;
+}
+
+.center-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+input {
+    padding: 10px;
+    margin: 30px;
+}
+
+/* use attribute selectors to target certain attributes of elements */
+input[type="color"], input[name="spacing"], input[name="blur"] {
+    margin-left: 100px;
+}
+
+/* use the variable on the element you want to change */
+img {
+    padding: var(--spacing);
+    background: var(--background);
+    filter: blur(var(--blur));
+}
+
+h1{
+    padding: 30px;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+
+
